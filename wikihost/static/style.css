@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #202122;
+}
+
+/* Homepage styles */
+.page-title {
+    font-family: 'Linux Libertine', Georgia, Times, serif;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 1em;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+}
+
+.topic-title {
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.topic-title:hover {
+    text-decoration: underline;
+}
+
+.topic-description {
+    color: #54595d;
+    margin-top: 0.5em;
+    font-size: 0.95em;
+}
+
+/* Topic page styles */
+.content {
+    background: white;
+    padding: 25px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+}
+
+.home-link {
+    color: #0645ad;
+    text-decoration: none;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Linux Libertine', Georgia, Times, serif;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 0.17em;
+    font-size: 1.8em;
+    margin: 0 0 0.6em 0;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+    padding: 0;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 0.8em 0 0.3em;
+    padding: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+ul {
+    margin: 0.3em 0 0.8em 1.6em;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.1em;
+}
+
+/* Link styles */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Red links for non-existent pages */
+a.new {
+    color: #ba0000;
+}
+
+a.new:hover {
+    text-decoration: underline;
+}
+
+.categories {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #a2a9b1;
+}
+
+.category {
+    margin: 0.5em 0;
+}
+
+.category a {
+    color: #0645ad;
+    background: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+
+.category a:hover {
+    text-decoration: none;
+    background: #eaecf0;
+}

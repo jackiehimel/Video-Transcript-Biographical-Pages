@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developing Wiki-Style Biographical Pages from Video Transcripts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="page-title">Developing Wiki-Style Biographical Pages from Video Transcripts</h1>
+    <div class="topic-list">
+        {% for topic in topics %}
+        <div class="topic-card">
+            <a href="{{ url_for('topic', id=topic.id) }}" class="topic-title">
+                {{ topic.title }}
+            </a>
+            <div class="topic-description">{{ topic.description }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

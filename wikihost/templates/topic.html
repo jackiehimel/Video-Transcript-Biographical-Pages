@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }} - WikiText</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('home') }}" class="home-link">← Back to Homepage</a>
+    <div class="content">
+        {{ content | safe }}
+    </div>
+</body>
+</html>

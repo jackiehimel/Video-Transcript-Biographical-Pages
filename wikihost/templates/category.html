@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category:{{ category_name }} - WikiText</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('home') }}" class="home-link">← Back to Homepage</a>
+    <div class="content">
+        <h1>Category:{{ category_name }}</h1>
+        <ul class="category-pages">
+            {% for page in pages %}
+            <li><a href="{{ url_for('topic', id=page.id) }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
